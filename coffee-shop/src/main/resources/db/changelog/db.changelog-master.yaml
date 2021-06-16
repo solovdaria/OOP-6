@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      validCheckSum: ANY
+      id: init_schema
+      author: user
+      changes:
+        - sqlFile:
+            dbms: mysql
+            encoding: utf8
+            path: db/changelog/init_schema.sql
